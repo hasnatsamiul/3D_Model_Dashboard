@@ -1,4 +1,4 @@
 export async function fetchLattice() {
-  const res = await fetch("http://localhost:8000/lattice");
+  export const API_BASE = "https://threed-model-dashboard.onrender.com";
   return await res.json();
 }
