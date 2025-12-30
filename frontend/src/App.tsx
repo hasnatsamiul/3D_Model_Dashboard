@@ -63,7 +63,11 @@ const App: React.FC = () => {
       // const data = await fetchLattice({ signal: abortRef.current.signal, timeoutMs: 120000 });
 
       // Otherwise, at least pass the signal if supported
-      const data = await fetchLattice(abortRef.current.signal as any);
+      const data = await fetchLattice({
+  signal: abortRef.current.signal,
+  timeoutMs: 120000,
+});
+
 
       setLattice(data);
       setStatus(null);
