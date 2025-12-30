@@ -5,26 +5,37 @@ type FetchLatticeOptions = {
   timeoutMs?: number;
 };
 
-export async function fetchLattice(
-  options: FetchLatticeOptions = {}
-) {
+function combineSignals(signals: AbortSignal[]) {
+  const controller = new AbortController();
+
+  const onAbort = () => controller.abort();
+
+  for (const sig of signals) {
+    if (sig.aborted) {
+      controller.abort();
+      break;
+    }
+    sig.addEventListener("abort", onAbort, { once: true });
+  }
+
+  return controller;
+}
+
+export async function fetchLattice(options: FetchLatticeOptions = {}) {
   const { signal, timeoutMs = 120_000 } = options;
 
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  const timeoutController = new AbortController();
+  const timeoutId = window.setTimeout(() => timeoutController.abort(), timeoutMs);
 
-  // Combine external signal (from React) + timeout signal
-  const combinedSignal = signal
-    ? new AbortSignalAny([signal, controller.signal])
-    : controller.signal;
+  const combined = signal
+    ? combineSignals([signal, timeoutController.signal])
+    : timeoutController;
 
   try {
     const res = await fetch(`${API_BASE}/lattice`, {
       method: "GET",
-      signal: combinedSignal,
-      headers: {
-        "Accept": "application/json",
-      },
+      signal: combined.signal, // real AbortSignal
+      headers: { Accept: "application/json" },
     });
 
     if (!res.ok) {
@@ -33,32 +44,11 @@ export async function fetchLattice(
 
     return await res.json();
   } catch (err: any) {
-    if (err.name === "AbortError") {
+    if (err?.name === "AbortError") {
       throw new Error("Request aborted or timed out");
     }
     throw err;
   } finally {
-    clearTimeout(timeout);
-  }
-}
-
-/**
- * Utility to combine multiple AbortSignals
- * (Browser-safe implementation)
- */
-class AbortSignalAny {
-  signal: AbortSignal;
-
-  constructor(signals: AbortSignal[]) {
-    const controller = new AbortController();
-    this.signal = controller.signal;
-
-    signals.forEach((sig) => {
-      if (sig.aborted) {
-        controller.abort();
-      } else {
-        sig.addEventListener("abort", () => controller.abort(), { once: true });
-      }
-    });
+    window.clearTimeout(timeoutId);
   }
 }
