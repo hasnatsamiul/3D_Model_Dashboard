@@ -17,10 +17,10 @@ const App: React.FC = () => {
 
   const [selectedNode, setSelectedNode] = useState<LatticeNode | null>(null);
 
-  // Prevent double-fetch (React 18 dev StrictMode / accidental re-renders)
+  // Prevent double-fetch (React 18 StrictMode/dev)
   const loadedOnceRef = useRef(false);
 
-  // For aborting previous request if user reloads quickly
+  // Abort in-flight request if reloading
   const abortRef = useRef<AbortController | null>(null);
 
   // Status timer
@@ -28,7 +28,7 @@ const App: React.FC = () => {
   const startedAtRef = useRef<number>(0);
 
   const stopTimer = () => {
-    if (timerRef.current) {
+    if (timerRef.current !== null) {
       window.clearInterval(timerRef.current);
       timerRef.current = null;
     }
@@ -40,9 +40,7 @@ const App: React.FC = () => {
 
     timerRef.current = window.setInterval(() => {
       const secs = Math.floor((Date.now() - startedAtRef.current) / 1000);
-      // Update status with elapsed time
       setStatus((prev) => {
-        // Keep the message but add elapsed seconds
         const base = prev?.split(" (")[0] ?? "Loading lattice...";
         return `${base} (${secs}s)`;
       });
@@ -55,28 +53,27 @@ const App: React.FC = () => {
     abortRef.current = new AbortController();
 
     setError(null);
-    setStatus("Loading lattice & ML predictions... It will take some time");
+    setStatus("Loading lattice & ML predictions... It may take some time");
     startTimer();
 
     try {
-      // If your fetchLattice supports a signal + timeout, use it:
-      // const data = await fetchLattice({ signal: abortRef.current.signal, timeoutMs: 120000 });
-
-      // Otherwise, at least pass the signal if supported
       const data = await fetchLattice({
-  signal: abortRef.current.signal,
-  timeoutMs: 120000,
-});
-
+        signal: abortRef.current.signal,
+        timeoutMs: 120000,
+      });
 
       setLattice(data);
       setStatus(null);
     } catch (e: any) {
-      if (e?.name === "AbortError") {
-        setStatus("Request cancelled.");
+      const msg = e?.message ? String(e.message) : "Failed to load lattice.";
+
+      // Matches api.ts behavior ("Request aborted or timed out")
+      if (msg.toLowerCase().includes("aborted") || msg.toLowerCase().includes("timed out")) {
+        setStatus("Request cancelled / timed out.");
+        setError(null);
       } else {
         setStatus(null);
-        setError(e?.message ? String(e.message) : "Failed to load lattice.");
+        setError(msg);
       }
     } finally {
       stopTimer();
@@ -90,7 +87,6 @@ const App: React.FC = () => {
     loadLattice();
 
     return () => {
-      // cleanup on unmount
       if (abortRef.current) abortRef.current.abort();
       stopTimer();
     };
@@ -104,18 +100,18 @@ const App: React.FC = () => {
 
         {status && <div className="status">{status}</div>}
 
-        {error && (
-          <div className="status" style={{ color: "#ff6b6b" }}>
-            {error}
-          </div>
-        )}
+        {error && <div className="status" style={{ color: "#ff6b6b" }}>{error}</div>}
 
         <ChartsPanel lattice={lattice} />
         <NodeDetails node={selectedNode} />
       </div>
 
       <div className="viewer">
-        <LatticeViewer lattice={lattice} colorMode={colorMode} onSelectNode={setSelectedNode} />
+        <LatticeViewer
+          lattice={lattice}
+          colorMode={colorMode}
+          onSelectNode={setSelectedNode}
+        />
       </div>
     </div>
   );
