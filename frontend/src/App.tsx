@@ -15,7 +15,7 @@ const App: React.FC = () => {
   const [selectedNode, setSelectedNode] = useState<LatticeNode | null>(null);
 
   const loadLattice = async () => {
-    setStatus("Loading lattice & ML predictions...This will take 20 seconds");
+    setStatus("Loading lattice & ML predictions...Sometimes this will take minutes");
     const data = await fetchLattice();
     setLattice(data);
     setStatus(null);
