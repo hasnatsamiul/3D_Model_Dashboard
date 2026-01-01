@@ -17,4 +17,4 @@ python -m venv .venv
 source .venv/bin/activate   # or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 python lattice_generator.py
-uvicorn main:app --reload --port 8000
+uvicorn app:app --reload --port 8000
