@@ -1,11 +1,20 @@
 import json
 from pathlib import Path
+from functools import lru_cache
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-LATTICE_ENRICHED_FILE = Path("backend/data/lattice_enriched.json")
+# -----------------------
+# PATHS (SAFE ON RENDER)
+# -----------------------
+BASE_DIR = Path(__file__).resolve().parent
+LATTICE_FILE = BASE_DIR / "data" / "lattice_enriched.json"
 
-app = FastAPI()
+# -----------------------
+# APP
+# -----------------------
+app = FastAPI(title="3D Model Dashboard API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -15,11 +24,25 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# -----------------------
+# CACHE (LOAD ONCE)
+# -----------------------
+@lru_cache(maxsize=1)
+def load_lattice():
+    if not LATTICE_FILE.exists():
+        raise FileNotFoundError(
+            "lattice_enriched.json not found. "
+            "Run enrich_lattice.py before deploying."
+        )
+    return json.loads(LATTICE_FILE.read_text())
+
+# -----------------------
+# ROUTES
+# -----------------------
 @app.get("/")
 def root():
-    return {"message": "Car Front Panel API Running "}
+    return {"status": "API running fast "}
 
 @app.get("/lattice")
 def get_lattice():
-    # super fast (just file read)
-    return json.loads(LATTICE_ENRICHED_FILE.read_text())
+    return load_lattice()

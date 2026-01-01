@@ -1,22 +1,27 @@
 import json
 import numpy as np
-from joblib import load
 from pathlib import Path
+from joblib import load
 
-LATTICE_FILE = "backend/data/lattice.json"
-MODEL_FILE = "backend/models/ml_model.pkl"
-OUT_FILE = "backend/data/lattice_enriched.json"
+# backend/
+BASE_DIR = Path(__file__).resolve().parent
 
-def enrich_and_save():
-    lattice = json.loads(Path(LATTICE_FILE).read_text())
+LATTICE_FILE = BASE_DIR / "data" / "lattice.json"
+MODEL_FILE   = BASE_DIR / "models" / "ml_model.pkl"
+OUT_FILE     = BASE_DIR / "data" / "lattice_enriched.json"
+
+
+def enrich_and_save(seed: int = 42):
+    np.random.seed(seed)
+
+    lattice = json.loads(LATTICE_FILE.read_text())
     model = load(MODEL_FILE)
 
     n = len(lattice["nodes"])
 
-    # Generate features (replace with real feature logic if you have it)
     strength = np.random.uniform(0.2, 0.9, size=n).astype(np.float32)
-    mass = np.random.uniform(0.2, 0.9, size=n).astype(np.float32)
-    cost = np.random.uniform(0.1, 0.7, size=n).astype(np.float32)
+    mass     = np.random.uniform(0.2, 0.9, size=n).astype(np.float32)
+    cost     = np.random.uniform(0.1, 0.7, size=n).astype(np.float32)
 
     X = np.stack([strength, mass, cost], axis=1)
     preds = model.predict(X).astype(np.float32)
@@ -33,9 +38,9 @@ def enrich_and_save():
             "defect_prob_pred": float(abs(rec * 0.2)),
         }
 
-    Path("backend/data").mkdir(parents=True, exist_ok=True)
-    Path(OUT_FILE).write_text(json.dumps(lattice))
-    print(f" Saved enriched lattice to {OUT_FILE}")
+    OUT_FILE.write_text(json.dumps(lattice, indent=2))
+    print(f"Saved -> {OUT_FILE} ({n} nodes)")
+
 
 if __name__ == "__main__":
     enrich_and_save()

@@ -1,0 +1,1032 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "data": {
+        "strength_score": 0.4621780812740326,
+        "material_mass": 0.8787092566490173,
+        "cost_factor": 0.11885751038789749,
+        "recommended_aluminium_mass": 0.6777647137641907,
+        "steel_ratio": 0.3222352862358093,
+        "aluminium_ratio": 0.6777647137641907,
+        "defect_prob_pred": 0.13555294275283813
+      }
+    },
+    {
+      "id": 1,
+      "x": -4,
+      "y": 0,
+      "z": 0,
+      "data": {
+        "strength_score": 0.8655000329017639,
+        "material_mass": 0.742592990398407,
+        "cost_factor": 0.48184624314308167,
+        "recommended_aluminium_mass": 0.7533904314041138,
+        "steel_ratio": 0.24660956859588623,
+        "aluminium_ratio": 0.7533904314041138,
+        "defect_prob_pred": 0.15067808628082277
+      }
+    },
+    {
+      "id": 2,
+      "x": -2,
+      "y": 0,
+      "z": 0,
+      "data": {
+        "strength_score": 0.7123957872390747,
+        "material_mass": 0.8576492667198181,
+        "cost_factor": 0.28861358761787415,
+        "recommended_aluminium_mass": 0.7571696639060974,
+        "steel_ratio": 0.2428303360939026,
+        "aluminium_ratio": 0.7571696639060974,
+        "defect_prob_pred": 0.1514339327812195
+      }
+    },
+    {
+      "id": 3,
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "data": {
+        "strength_score": 0.6190609335899353,
+        "material_mass": 0.826379120349884,
+        "cost_factor": 0.4051424264907837,
+        "recommended_aluminium_mass": 0.7220600247383118,
+        "steel_ratio": 0.27793997526168823,
+        "aluminium_ratio": 0.7220600247383118,
+        "defect_prob_pred": 0.14441200494766235
+      }
+    },
+    {
+      "id": 4,
+      "x": 4,
+      "y": 0,
+      "z": 0,
+      "data": {
+        "strength_score": 0.3092130422592163,
+        "material_mass": 0.6185299754142761,
+        "cost_factor": 0.6445398926734924,
+        "recommended_aluminium_mass": 0.5283358693122864,
+        "steel_ratio": 0.4716641306877136,
+        "aluminium_ratio": 0.5283358693122864,
+        "defect_prob_pred": 0.10566717386245728
+      }
+    },
+    {
+      "id": 5,
+      "x": -4,
+      "y": 0,
+      "z": 2,
+      "data": {
+        "strength_score": 0.3091961741447449,
+        "material_mass": 0.8453119397163391,
+        "cost_factor": 0.24957533180713654,
+        "recommended_aluminium_mass": 0.6249035596847534,
+        "steel_ratio": 0.3750964403152466,
+        "aluminium_ratio": 0.6249035596847534,
+        "defect_prob_pred": 0.12498071193695069
+      }
+    },
+    {
+      "id": 6,
+      "x": -2,
+      "y": 0,
+      "z": 2,
+      "data": {
+        "strength_score": 0.24065852165222168,
+        "material_mass": 0.2619447410106659,
+        "cost_factor": 0.34622976183891296,
+        "recommended_aluminium_mass": 0.26398736238479614,
+        "steel_ratio": 0.7360126376152039,
+        "aluminium_ratio": 0.26398736238479614,
+        "defect_prob_pred": 0.052797472476959234
+      }
+    },
+    {
+      "id": 7,
+      "x": 2,
+      "y": 0,
+      "z": 2,
+      "data": {
+        "strength_score": 0.8063232898712158,
+        "material_mass": 0.3371880054473877,
+        "cost_factor": 0.553330659866333,
+        "recommended_aluminium_mass": 0.49954286217689514,
+        "steel_ratio": 0.5004571378231049,
+        "aluminium_ratio": 0.49954286217689514,
+        "defect_prob_pred": 0.09990857243537904
+      }
+    },
+    {
+      "id": 8,
+      "x": 4,
+      "y": 0,
+      "z": 2,
+      "data": {
+        "strength_score": 0.6207805275917053,
+        "material_mass": 0.23165909945964813,
+        "cost_factor": 0.23727889358997345,
+        "recommended_aluminium_mass": 0.34895750880241394,
+        "steel_ratio": 0.6510424911975861,
+        "aluminium_ratio": 0.34895750880241394,
+        "defect_prob_pred": 0.0697915017604828
+      }
+    },
+    {
+      "id": 9,
+      "x": -4,
+      "y": -1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.6956508159637451,
+        "material_mass": 0.4277312457561493,
+        "cost_factor": 0.1461879462003708,
+        "recommended_aluminium_mass": 0.47995278239250183,
+        "steel_ratio": 0.5200472176074982,
+        "aluminium_ratio": 0.47995278239250183,
+        "defect_prob_pred": 0.09599055647850037
+      }
+    },
+    {
+      "id": 10,
+      "x": -2,
+      "y": -1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.21440914273262024,
+        "material_mass": 0.47207409143447876,
+        "cost_factor": 0.27385085821151733,
+        "recommended_aluminium_mass": 0.3749522864818573,
+        "steel_ratio": 0.6250477135181427,
+        "aluminium_ratio": 0.3749522864818573,
+        "defect_prob_pred": 0.07499045729637147
+      }
+    },
+    {
+      "id": 11,
+      "x": 2,
+      "y": -1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.8789368867874146,
+        "material_mass": 0.38994431495666504,
+        "cost_factor": 0.1967327743768692,
+        "recommended_aluminium_mass": 0.5173209309577942,
+        "steel_ratio": 0.4826790690422058,
+        "aluminium_ratio": 0.5173209309577942,
+        "defect_prob_pred": 0.10346418619155884
+      }
+    },
+    {
+      "id": 12,
+      "x": 4,
+      "y": -1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.7827098369598389,
+        "material_mass": 0.7801162600517273,
+        "cost_factor": 0.657818615436554,
+        "recommended_aluminium_mass": 0.7686645984649658,
+        "steel_ratio": 0.23133540153503418,
+        "aluminium_ratio": 0.7686645984649658,
+        "defect_prob_pred": 0.1537329196929932
+      }
+    },
+    {
+      "id": 13,
+      "x": -4,
+      "y": -2,
+      "z": 0,
+      "data": {
+        "strength_score": 0.3486373722553253,
+        "material_mass": 0.449727326631546,
+        "cost_factor": 0.5848722457885742,
+        "recommended_aluminium_mass": 0.4329148232936859,
+        "steel_ratio": 0.5670851767063141,
+        "aluminium_ratio": 0.4329148232936859,
+        "defect_prob_pred": 0.08658296465873719
+      }
+    },
+    {
+      "id": 14,
+      "x": -2,
+      "y": -2,
+      "z": 0,
+      "data": {
+        "strength_score": 0.3272774815559387,
+        "material_mass": 0.3966541588306427,
+        "cost_factor": 0.4800422489643097,
+        "recommended_aluminium_mass": 0.384179949760437,
+        "steel_ratio": 0.615820050239563,
+        "aluminium_ratio": 0.384179949760437,
+        "defect_prob_pred": 0.0768359899520874
+      }
+    },
+    {
+      "id": 15,
+      "x": 2,
+      "y": -2,
+      "z": 0,
+      "data": {
+        "strength_score": 0.3283831477165222,
+        "material_mass": 0.5798872709274292,
+        "cost_factor": 0.6228763461112976,
+        "recommended_aluminium_mass": 0.508734941482544,
+        "steel_ratio": 0.49126505851745605,
+        "aluminium_ratio": 0.508734941482544,
+        "defect_prob_pred": 0.1017469882965088
+      }
+    },
+    {
+      "id": 16,
+      "x": 4,
+      "y": -2,
+      "z": 0,
+      "data": {
+        "strength_score": 0.41296955943107605,
+        "material_mass": 0.2986469566822052,
+        "cost_factor": 0.5822032690048218,
+        "recommended_aluminium_mass": 0.3612993657588959,
+        "steel_ratio": 0.6387006342411041,
+        "aluminium_ratio": 0.3612993657588959,
+        "defect_prob_pred": 0.07225987315177917
+      }
+    },
+    {
+      "id": 17,
+      "x": -4,
+      "y": 1,
+      "z": 2,
+      "data": {
+        "strength_score": 0.5673295259475708,
+        "material_mass": 0.7615379095077515,
+        "cost_factor": 0.21194203197956085,
+        "recommended_aluminium_mass": 0.6483157873153687,
+        "steel_ratio": 0.35168421268463135,
+        "aluminium_ratio": 0.6483157873153687,
+        "defect_prob_pred": 0.12966315746307375
+      }
+    },
+    {
+      "id": 18,
+      "x": -2,
+      "y": 1,
+      "z": 2,
+      "data": {
+        "strength_score": 0.502361536026001,
+        "material_mass": 0.2521854639053345,
+        "cost_factor": 0.6355354189872742,
+        "recommended_aluminium_mass": 0.36557328701019287,
+        "steel_ratio": 0.6344267129898071,
+        "aluminium_ratio": 0.36557328701019287,
+        "defect_prob_pred": 0.07311465740203858
+      }
+    },
+    {
+      "id": 19,
+      "x": 2,
+      "y": 1,
+      "z": 2,
+      "data": {
+        "strength_score": 0.4038603901863098,
+        "material_mass": 0.8908208608627319,
+        "cost_factor": 0.423605352640152,
+        "recommended_aluminium_mass": 0.6980111598968506,
+        "steel_ratio": 0.3019888401031494,
+        "aluminium_ratio": 0.6980111598968506,
+        "defect_prob_pred": 0.13960223197937013
+      }
+    },
+    {
+      "id": 20,
+      "x": 4,
+      "y": 1,
+      "z": 2,
+      "data": {
+        "strength_score": 0.6282970309257507,
+        "material_mass": 0.7405713200569153,
+        "cost_factor": 0.5844640731811523,
+        "recommended_aluminium_mass": 0.691278338432312,
+        "steel_ratio": 0.308721661567688,
+        "aluminium_ratio": 0.691278338432312,
+        "defect_prob_pred": 0.1382556676864624
+      }
+    },
+    {
+      "id": 21,
+      "x": -4,
+      "y": 2,
+      "z": 3,
+      "data": {
+        "strength_score": 0.2976456880569458,
+        "material_mass": 0.33910098671913147,
+        "cost_factor": 0.6376547813415527,
+        "recommended_aluminium_mass": 0.35651978850364685,
+        "steel_ratio": 0.6434802114963531,
+        "aluminium_ratio": 0.35651978850364685,
+        "defect_prob_pred": 0.07130395770072938
+      }
+    },
+    {
+      "id": 22,
+      "x": -2,
+      "y": 2,
+      "z": 3,
+      "data": {
+        "strength_score": 0.4045012593269348,
+        "material_mass": 0.20386548340320587,
+        "cost_factor": 0.29080209136009216,
+        "recommended_aluminium_mass": 0.2727498710155487,
+        "steel_ratio": 0.7272501289844513,
+        "aluminium_ratio": 0.2727498710155487,
+        "defect_prob_pred": 0.054549974203109745
+      }
+    },
+    {
+      "id": 23,
+      "x": 0,
+      "y": 2,
+      "z": 3,
+      "data": {
+        "strength_score": 0.4564532935619354,
+        "material_mass": 0.7708230018615723,
+        "cost_factor": 0.166031152009964,
+        "recommended_aluminium_mass": 0.6160328984260559,
+        "steel_ratio": 0.3839671015739441,
+        "aluminium_ratio": 0.6160328984260559,
+        "defect_prob_pred": 0.12320657968521119
+      }
+    },
+    {
+      "id": 24,
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "data": {
+        "strength_score": 0.5192489624023438,
+        "material_mass": 0.6948001384735107,
+        "cost_factor": 0.23676109313964844,
+        "recommended_aluminium_mass": 0.5963308811187744,
+        "steel_ratio": 0.4036691188812256,
+        "aluminium_ratio": 0.5963308811187744,
+        "defect_prob_pred": 0.11926617622375489
+      }
+    },
+    {
+      "id": 25,
+      "x": 4,
+      "y": 2,
+      "z": 3,
+      "data": {
+        "strength_score": 0.74962317943573,
+        "material_mass": 0.7103050351142883,
+        "cost_factor": 0.3562646806240082,
+        "recommended_aluminium_mass": 0.686696469783783,
+        "steel_ratio": 0.31330353021621704,
+        "aluminium_ratio": 0.686696469783783,
+        "defect_prob_pred": 0.1373392939567566
+      }
+    },
+    {
+      "id": 26,
+      "x": -4,
+      "y": 1,
+      "z": 0,
+      "data": {
+        "strength_score": 0.33977165818214417,
+        "material_mass": 0.7398892641067505,
+        "cost_factor": 0.5908088684082031,
+        "recommended_aluminium_mass": 0.604945957660675,
+        "steel_ratio": 0.39505404233932495,
+        "aluminium_ratio": 0.604945957660675,
+        "defect_prob_pred": 0.12098919153213501
+      }
+    },
+    {
+      "id": 27,
+      "x": -2,
+      "y": 1,
+      "z": 0,
+      "data": {
+        "strength_score": 0.559964120388031,
+        "material_mass": 0.2518312633037567,
+        "cost_factor": 0.6164383292198181,
+        "recommended_aluminium_mass": 0.38073182106018066,
+        "steel_ratio": 0.6192681789398193,
+        "aluminium_ratio": 0.38073182106018066,
+        "defect_prob_pred": 0.07614636421203613
+      }
+    },
+    {
+      "id": 28,
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "data": {
+        "strength_score": 0.6146901845932007,
+        "material_mass": 0.4509260058403015,
+        "cost_factor": 0.1041712760925293,
+        "recommended_aluminium_mass": 0.4653797745704651,
+        "steel_ratio": 0.5346202254295349,
+        "aluminium_ratio": 0.4653797745704651,
+        "defect_prob_pred": 0.09307595491409303
+      }
+    },
+    {
+      "id": 29,
+      "x": 4,
+      "y": 1,
+      "z": 0,
+      "data": {
+        "strength_score": 0.23251529037952423,
+        "material_mass": 0.2811083495616913,
+        "cost_factor": 0.4064483940601349,
+        "recommended_aluminium_mass": 0.27906444668769836,
+        "steel_ratio": 0.7209355533123016,
+        "aluminium_ratio": 0.27906444668769836,
+        "defect_prob_pred": 0.055812889337539674
+      }
+    },
+    {
+      "id": 30,
+      "x": -4,
+      "y": 1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.6252813935279846,
+        "material_mass": 0.8041723966598511,
+        "cost_factor": 0.3504466116428375,
+        "recommended_aluminium_mass": 0.7051325440406799,
+        "steel_ratio": 0.29486745595932007,
+        "aluminium_ratio": 0.7051325440406799,
+        "defect_prob_pred": 0.141026508808136
+      }
+    },
+    {
+      "id": 31,
+      "x": -2,
+      "y": 1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.3193668723106384,
+        "material_mass": 0.6363086700439453,
+        "cost_factor": 0.23326468467712402,
+        "recommended_aluminium_mass": 0.5009217262268066,
+        "steel_ratio": 0.49907827377319336,
+        "aluminium_ratio": 0.5009217262268066,
+        "defect_prob_pred": 0.10018434524536134
+      }
+    },
+    {
+      "id": 32,
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.24553611874580383,
+        "material_mass": 0.43162861466407776,
+        "cost_factor": 0.17191922664642334,
+        "recommended_aluminium_mass": 0.34982991218566895,
+        "steel_ratio": 0.650170087814331,
+        "aluminium_ratio": 0.34982991218566895,
+        "defect_prob_pred": 0.0699659824371338
+      }
+    },
+    {
+      "id": 33,
+      "x": 4,
+      "y": 1,
+      "z": 1,
+      "data": {
+        "strength_score": 0.8642199039459229,
+        "material_mass": 0.244490846991539,
+        "cost_factor": 0.30256909132003784,
+        "recommended_aluminium_mass": 0.43621739745140076,
+        "steel_ratio": 0.5637826025485992,
+        "aluminium_ratio": 0.43621739745140076,
+        "defect_prob_pred": 0.08724347949028016
+      }
+    },
+    {
+      "id": 34,
+      "x": -4,
+      "y": -1.5,
+      "z": 2,
+      "data": {
+        "strength_score": 0.8759424090385437,
+        "material_mass": 0.41768762469291687,
+        "cost_factor": 0.6657457947731018,
+        "recommended_aluminium_mass": 0.5799698829650879,
+        "steel_ratio": 0.4200301170349121,
+        "aluminium_ratio": 0.5799698829650879,
+        "defect_prob_pred": 0.11599397659301758
+      }
+    },
+    {
+      "id": 35,
+      "x": -2,
+      "y": -1.5,
+      "z": 2,
+      "data": {
+        "strength_score": 0.7658781409263611,
+        "material_mass": 0.4276283383369446,
+        "cost_factor": 0.2939217686653137,
+        "recommended_aluminium_mass": 0.5157326459884644,
+        "steel_ratio": 0.48426735401153564,
+        "aluminium_ratio": 0.5157326459884644,
+        "defect_prob_pred": 0.10314652919769288
+      }
+    },
+    {
+      "id": 36,
+      "x": 2,
+      "y": -1.5,
+      "z": 2,
+      "data": {
+        "strength_score": 0.41322964429855347,
+        "material_mass": 0.7107243537902832,
+        "cost_factor": 0.41127437353134155,
+        "recommended_aluminium_mass": 0.5915309190750122,
+        "steel_ratio": 0.4084690809249878,
+        "aluminium_ratio": 0.5915309190750122,
+        "defect_prob_pred": 0.11830618381500245
+      }
+    },
+    {
+      "id": 37,
+      "x": 4,
+      "y": -1.5,
+      "z": 2,
+      "data": {
+        "strength_score": 0.26837047934532166,
+        "material_mass": 0.6462902426719666,
+        "cost_factor": 0.5218113660812378,
+        "recommended_aluminium_mass": 0.5204664468765259,
+        "steel_ratio": 0.4795335531234741,
+        "aluminium_ratio": 0.5204664468765259,
+        "defect_prob_pred": 0.10409328937530518
+      }
+    },
+    {
+      "id": 38,
+      "x": -4,
+      "y": -0.5,
+      "z": -0.3,
+      "data": {
+        "strength_score": 0.6789631247520447,
+        "material_mass": 0.8210489153862,
+        "cost_factor": 0.3181777596473694,
+        "recommended_aluminium_mass": 0.7281360626220703,
+        "steel_ratio": 0.2718639373779297,
+        "aluminium_ratio": 0.7281360626220703,
+        "defect_prob_pred": 0.14562721252441407
+      }
+    },
+    {
+      "id": 39,
+      "x": -2,
+      "y": -0.5,
+      "z": -0.3,
+      "data": {
+        "strength_score": 0.5081067681312561,
+        "material_mass": 0.5305504202842712,
+        "cost_factor": 0.6830692291259766,
+        "recommended_aluminium_mass": 0.5390691757202148,
+        "steel_ratio": 0.46093082427978516,
+        "aluminium_ratio": 0.5390691757202148,
+        "defect_prob_pred": 0.10781383514404297
+      }
+    },
+    {
+      "id": 40,
+      "x": 2,
+      "y": -0.5,
+      "z": -0.3,
+      "data": {
+        "strength_score": 0.2854267656803131,
+        "material_mass": 0.28371596336364746,
+        "cost_factor": 0.6774683594703674,
+        "recommended_aluminium_mass": 0.32360443472862244,
+        "steel_ratio": 0.6763955652713776,
+        "aluminium_ratio": 0.32360443472862244,
+        "defect_prob_pred": 0.06472088694572449
+      }
+    },
+    {
+      "id": 41,
+      "x": 4,
+      "y": -0.5,
+      "z": -0.3,
+      "data": {
+        "strength_score": 0.5466238260269165,
+        "material_mass": 0.6992713212966919,
+        "cost_factor": 0.2510693669319153,
+        "recommended_aluminium_mass": 0.6086568832397461,
+        "steel_ratio": 0.3913431167602539,
+        "aluminium_ratio": 0.6086568832397461,
+        "defect_prob_pred": 0.12173137664794922
+      }
+    },
+    {
+      "id": 42,
+      "x": -1,
+      "y": 0,
+      "z": -0.5,
+      "data": {
+        "strength_score": 0.22407196462154388,
+        "material_mass": 0.7325495481491089,
+        "cost_factor": 0.3983491063117981,
+        "recommended_aluminium_mass": 0.5465862154960632,
+        "steel_ratio": 0.45341378450393677,
+        "aluminium_ratio": 0.5465862154960632,
+        "defect_prob_pred": 0.10931724309921265
+      }
+    },
+    {
+      "id": 43,
+      "x": 1,
+      "y": 0,
+      "z": -0.5,
+      "data": {
+        "strength_score": 0.8365243077278137,
+        "material_mass": 0.5928940176963806,
+        "cost_factor": 0.2805269956588745,
+        "recommended_aluminium_mass": 0.6347464323043823,
+        "steel_ratio": 0.3652535676956177,
+        "aluminium_ratio": 0.6347464323043823,
+        "defect_prob_pred": 0.12694928646087647
+      }
+    },
+    {
+      "id": 44,
+      "x": -1,
+      "y": 0,
+      "z": 1.5,
+      "data": {
+        "strength_score": 0.38114598393440247,
+        "material_mass": 0.7396770119667053,
+        "cost_factor": 0.2709043025970459,
+        "recommended_aluminium_mass": 0.5852404236793518,
+        "steel_ratio": 0.4147595763206482,
+        "aluminium_ratio": 0.5852404236793518,
+        "defect_prob_pred": 0.11704808473587036
+      }
+    },
+    {
+      "id": 45,
+      "x": 1,
+      "y": 0,
+      "z": 1.5,
+      "data": {
+        "strength_score": 0.6637656092643738,
+        "material_mass": 0.5456569194793701,
+        "cost_factor": 0.12213216722011566,
+        "recommended_aluminium_mass": 0.5387370586395264,
+        "steel_ratio": 0.46126294136047363,
+        "aluminium_ratio": 0.5387370586395264,
+        "defect_prob_pred": 0.10774741172790528
+      }
+    },
+    {
+      "id": 46,
+      "x": -3,
+      "y": 0.3,
+      "z": 1.2,
+      "data": {
+        "strength_score": 0.41819775104522705,
+        "material_mass": 0.5659129619598389,
+        "cost_factor": 0.46573859453201294,
+        "recommended_aluminium_mass": 0.5115809440612793,
+        "steel_ratio": 0.4884190559387207,
+        "aluminium_ratio": 0.5115809440612793,
+        "defect_prob_pred": 0.10231618881225586
+      }
+    },
+    {
+      "id": 47,
+      "x": -1,
+      "y": 0.3,
+      "z": 1.2,
+      "data": {
+        "strength_score": 0.564047634601593,
+        "material_mass": 0.499278724193573,
+        "cost_factor": 0.4016074240207672,
+        "recommended_aluminium_mass": 0.5089422464370728,
+        "steel_ratio": 0.49105775356292725,
+        "aluminium_ratio": 0.5089422464370728,
+        "defect_prob_pred": 0.10178844928741455
+      }
+    },
+    {
+      "id": 48,
+      "x": 1,
+      "y": 0.3,
+      "z": 1.2,
+      "data": {
+        "strength_score": 0.5826972126960754,
+        "material_mass": 0.21779339015483856,
+        "cost_factor": 0.1308872550725937,
+        "recommended_aluminium_mass": 0.318573921918869,
+        "steel_ratio": 0.681426078081131,
+        "aluminium_ratio": 0.318573921918869,
+        "defect_prob_pred": 0.0637147843837738
+      }
+    },
+    {
+      "id": 49,
+      "x": 3,
+      "y": 0.3,
+      "z": 1.2,
+      "data": {
+        "strength_score": 0.32939812541007996,
+        "material_mass": 0.27552399039268494,
+        "cost_factor": 0.2671878933906555,
+        "recommended_aluminium_mass": 0.2908526062965393,
+        "steel_ratio": 0.7091473937034607,
+        "aluminium_ratio": 0.2908526062965393,
+        "defect_prob_pred": 0.05817052125930786
+      }
+    }
+  ],
+  "edges": [
+    {
+      "start": 0,
+      "end": 2
+    },
+    {
+      "start": 0,
+      "end": 3
+    },
+    {
+      "start": 1,
+      "end": 2
+    },
+    {
+      "start": 2,
+      "end": 3
+    },
+    {
+      "start": 3,
+      "end": 4
+    },
+    {
+      "start": 1,
+      "end": 5
+    },
+    {
+      "start": 2,
+      "end": 6
+    },
+    {
+      "start": 3,
+      "end": 7
+    },
+    {
+      "start": 4,
+      "end": 8
+    },
+    {
+      "start": 9,
+      "end": 10
+    },
+    {
+      "start": 10,
+      "end": 11
+    },
+    {
+      "start": 11,
+      "end": 12
+    },
+    {
+      "start": 13,
+      "end": 14
+    },
+    {
+      "start": 14,
+      "end": 15
+    },
+    {
+      "start": 15,
+      "end": 16
+    },
+    {
+      "start": 9,
+      "end": 13
+    },
+    {
+      "start": 10,
+      "end": 14
+    },
+    {
+      "start": 11,
+      "end": 15
+    },
+    {
+      "start": 12,
+      "end": 16
+    },
+    {
+      "start": 5,
+      "end": 6
+    },
+    {
+      "start": 6,
+      "end": 7
+    },
+    {
+      "start": 7,
+      "end": 8
+    },
+    {
+      "start": 5,
+      "end": 17
+    },
+    {
+      "start": 6,
+      "end": 18
+    },
+    {
+      "start": 7,
+      "end": 19
+    },
+    {
+      "start": 8,
+      "end": 20
+    },
+    {
+      "start": 17,
+      "end": 18
+    },
+    {
+      "start": 18,
+      "end": 19
+    },
+    {
+      "start": 19,
+      "end": 20
+    },
+    {
+      "start": 17,
+      "end": 21
+    },
+    {
+      "start": 18,
+      "end": 22
+    },
+    {
+      "start": 19,
+      "end": 23
+    },
+    {
+      "start": 20,
+      "end": 25
+    },
+    {
+      "start": 21,
+      "end": 22
+    },
+    {
+      "start": 22,
+      "end": 23
+    },
+    {
+      "start": 23,
+      "end": 24
+    },
+    {
+      "start": 24,
+      "end": 25
+    },
+    {
+      "start": 26,
+      "end": 27
+    },
+    {
+      "start": 28,
+      "end": 29
+    },
+    {
+      "start": 26,
+      "end": 30
+    },
+    {
+      "start": 27,
+      "end": 31
+    },
+    {
+      "start": 28,
+      "end": 32
+    },
+    {
+      "start": 29,
+      "end": 33
+    },
+    {
+      "start": 30,
+      "end": 31
+    },
+    {
+      "start": 31,
+      "end": 32
+    },
+    {
+      "start": 32,
+      "end": 33
+    },
+    {
+      "start": 34,
+      "end": 35
+    },
+    {
+      "start": 35,
+      "end": 36
+    },
+    {
+      "start": 36,
+      "end": 37
+    },
+    {
+      "start": 9,
+      "end": 34
+    },
+    {
+      "start": 10,
+      "end": 35
+    },
+    {
+      "start": 11,
+      "end": 36
+    },
+    {
+      "start": 12,
+      "end": 37
+    },
+    {
+      "start": 38,
+      "end": 39
+    },
+    {
+      "start": 39,
+      "end": 40
+    },
+    {
+      "start": 40,
+      "end": 41
+    },
+    {
+      "start": 38,
+      "end": 13
+    },
+    {
+      "start": 41,
+      "end": 16
+    },
+    {
+      "start": 42,
+      "end": 43
+    },
+    {
+      "start": 42,
+      "end": 38
+    },
+    {
+      "start": 43,
+      "end": 41
+    },
+    {
+      "start": 44,
+      "end": 45
+    },
+    {
+      "start": 44,
+      "end": 6
+    },
+    {
+      "start": 45,
+      "end": 7
+    },
+    {
+      "start": 46,
+      "end": 47
+    },
+    {
+      "start": 47,
+      "end": 48
+    },
+    {
+      "start": 48,
+      "end": 49
+    },
+    {
+      "start": 46,
+      "end": 5
+    },
+    {
+      "start": 49,
+      "end": 8
+    }
+  ]
+}
