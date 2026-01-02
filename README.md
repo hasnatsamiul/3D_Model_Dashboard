@@ -15,7 +15,7 @@ pip install -r requirements.txt
 python lattice_generator.py
 uvicorn app:app --reload --port 8000
 ```
-## Test API in Browser
+## After run Test the API in Browser
 
 http://127.0.0.1:8000/lattice
 
