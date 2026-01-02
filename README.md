@@ -2,7 +2,31 @@
 
 https://3-d-model-dashboard.vercel.app/
 
-## Project Overview
+Sometime it takes some time to load the lattice data.
+
+## How to run
+## Backend
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate   # or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python lattice_generator.py
+uvicorn app:app --reload --port 8000
+```
+## Test API in Browser
+
+http://127.0.0.1:8000/lattice
+
+## Frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+# Project Overview
 
 A FastAPI-based backend service that provides a 3D lattice structure enriched with machine-learning–based material recommendations.
 The API is designed for real-time 3D visualization dashboards and optimized for fast cloud deployment. This project demonstrates how machine learning can be integrated into a 3D structural model and exposed through a lightweight REST API.
