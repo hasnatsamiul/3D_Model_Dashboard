@@ -2,7 +2,14 @@
 
 https://3-d-model-dashboard.vercel.app/
 
-Sometime it takes some time to load the lattice data.
+Sometimes it takes Minutes to load the lattice data.
+
+<img width="1497" height="828" alt="Screenshot 2026-08-25 at 13 47 24" src="https://github.com/user-attachments/assets/b1436cc1-fa07-4913-8aee-c9438494bb8d" />
+
+<img width="1496" height="827" alt="Screenshot 2026-08-25 at 13 51 00" src="https://github.com/user-attachments/assets/839f0bbb-3e77-4e6c-878c-31d3d8ed9102" />
+
+<img width="1499" height="762" alt="Screenshot 2026-08-25 at 13 51 13" src="https://github.com/user-attachments/assets/f73cc35c-8038-4070-8618-2b3564ab4f3e" />
+
 
 ## How to run
 ## Backend
